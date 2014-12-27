@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>EmailSendingWebApp</display-name>
+
+    <!-- SMTP settings -->
+    <context-param>
+        <param-name>host</param-name>
+        <param-value>in-v3.mailjet.com</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>port</param-name>
+        <param-value>587</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>user</param-name>
+        <param-value>7ed60261e25aa3a74aa7bc5e97986f5a</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>pass</param-name>
+        <param-value>b48c32edaca1dccfa0439a782b407649</param-value>
+    </context-param>
+
+    <welcome-file-list>
+        <welcome-file>EmailForm.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
